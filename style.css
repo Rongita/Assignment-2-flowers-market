@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #e3dcd8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main_Container */
+.container,.footer-items{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+.logo{
+    width: 130px;
+    height: 79px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(137, 135, 161);
+    font-weight: 800;
+    margin: 0 20px;
+}
+.nav-items a{
+    color: rgb(37, 36, 50);
+}
+
+.nav-items i{
+    margin-left: 30px;
+}
+nav ul a:hover{
+     border-bottom: 3px solid rgb(16, 13, 13);
+}
+
+@media screen and (max-width:576px) {
+    .nav-itemss{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:570px) {
+    .card-icon{
+        display: block;
+    }
+}   
+
+/* Hero Section-1 */
+.hero-section{
+    display: flex;
+    margin: 80px 0 80px 0;
+}
+.always-title,.fresh-title{
+    font-size: 65px;
+    font-weight: 800;
+    color: #000000;
+}
+.fresh-title{
+    color: #E95A08;
+
+}
+.sub-title{
+    color: #000000;
+    font-size: 22px;
+    opacity: 50%;
+}
+
+/* Our Plants Styles */
+.plants-section{
+    margin-top:200px;
+}
+.title-1{
+    color: #E95A08;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.title-2{
+    color:  #000000;
+    font-size: 50px;
+    font-weight: 800;
+}
+ 
+/* Card */
+.our-card-section-title{
+    text-align: center;
+    margin: 0 auto;
+     
+}
+.card-container{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    row-gap: 30px;
+    margin-top: 20px;
+    
+}
+.card {
+  max-width: 270px;
+  text-align: center;
+  margin: 0 auto;
+   
+}
+.lily{
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
+
+}
+.price {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 800;
+   
+}
+.card button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #E95A08;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card button:hover{
+    background-color: #b25824;
+}
