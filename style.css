@@ -300,3 +300,146 @@ button:hover{
     background-color: #aa5f2d;
     color: white;
 }
+
+/* Footer Section */
+.footer-section{
+    gap: 200px;
+    margin-top: 130px;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 70px;
+    margin: 0 auto 80px auto;
+     
+    
+}
+.footer-logo{
+    width: 350px;
+    height: 170px;
+    
+}
+.footer-logo p{
+    color:  rgb(137, 135, 161);
+    opacity: 75%;
+}
+.footer-item ul{
+    list-style-type: none;
+}
+.footer-item li{
+    margin: 20px;
+}
+.footer-item li a{
+     text-decoration: none;
+     color: rgb(137, 135, 161);
+}
+.footer-link img{
+    margin-left: 13px;
+}
+.footer-item li a:hover{
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 23px;
+    color: rgb(7, 7, 199);
+    
+}
+
+/* -------------------- Responsive Design -------------------- */
+
+/* For tablets (768px and below) */
+@media screen and (max-width: 480px) {
+    nav {
+         
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .flower-plants-lover {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .box4 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .bunch-title {
+        margin-left: 10%;
+        margin-top: 150px;
+        width: 80%;
+    }
+
+    .bunch-title input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .always-title, .fresh-title, .flower-plant-discription p {
+        font-size: 36px;
+    }
+
+    .sub-title, .flower-plant-discription li {
+        font-size: 16px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .text {
+        top: 30%;
+        left: 5%;
+    }
+
+    .badge img {
+        width: 200px;
+        bottom: 380px;
+        left: 20%;
+    }
+
+    .bunch-title p {
+        font-size: 28px;
+        margin-left: 0;
+    }
+}
+
+/* Desktop-specific tweaks (optional) */
+@media screen and (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bunch-title {
+        margin-left: 30%;
+    }
+
+    .text {
+        left: 10%;
+    }
+}
